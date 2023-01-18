@@ -101,11 +101,17 @@ body {
 .info_submit input {
   width: 100%;
   height: 80px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
   border-radius: 10px;
   outline: none;
   border: 1px solid rgba(255, 255, 255, 0.7);
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(22.5px);
+  color: #ffffff;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+
   padding-left: 30px;
 }
 /* Estilização do placeholder do Input  */
@@ -139,8 +145,9 @@ body {
 
 /* Animação de trocar a cor após passar o mouse por cima do botão */
 .info_submit button:hover {
-  background-color: #2f0ac5;
-  transition: 0.5s;
+  background: #a349ec;
+  box-shadow: 0 0 5px #7a6dff, 0 0 25px #7a6dff, 0 0 50px #7a6dff,
+    0 0 100px #7a6dff;
 }
 
 /* Estilização do cartão */
@@ -204,6 +211,15 @@ body {
 .card__chip img {
   width: 60px;
   height: 43px;
+  border-radius: 8px;
+}
+
+/* Simbolo mastercard */
+.card__master img {
+  position: absolute;
+  width: 68px;
+  left: 411px;
+  top: 27px;
   border-radius: 8px;
 }
 
