@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #55439e, #952fff);
+}
+
+/* Container principal com ajustes de tamanhos e centralização */
+.main-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-image: url("./img/Ellipse-8.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Imagem da esquerda em baixo */
+#img-left-bottom {
+  width: 284px;
+  height: 284px;
+  position: absolute;
+  left: 57px;
+  top: 570px;
+}
+
+/* Imagem do topo da esquerda */
+#img-left-top {
+  width: 290.25px;
+  height: 267.16px;
+  position: absolute;
+  top: -98px;
+  left: -10px;
+}
+
+/* Imagem da direita */
+#img-right {
+  width: 540px;
+  height: 655px;
+  position: absolute;
+  right: 0;
+  top: 106px;
+}
+
+/* Informações a esquerda */
+.info {
+  position: absolute;
+  width: 100%;
+  max-width: 1485px;
+  z-index: 9;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Largura do título */
+.info_title {
+  width: 480px;
+}
+
+/* Estilização do H1 título */
+.info_title h1 {
+  width: 428px;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 60px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* Estilização do P Subtítulo */
+.info_title p {
+  width: 383px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 60px;
+}
+
+/* Estilização do submit */
+.info_submit {
+  width: 100%;
+  position: relative;
+}
+
+/* Estilização do Input */
+.info_submit input {
+  width: 100%;
+  height: 80px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(22.5px);
+  padding-left: 30px;
+}
+/* Estilização do placeholder do Input  */
+.info_submit input::placeholder {
+  font-family: "Lato", sans-serif;
+  font-weight: 400px;
+  font-size: 16px;
+  line-height: 16px;
+  color: #cdbfd8;
+}
+
+/* Estilização do botão */
+.info_submit button {
+  position: absolute;
+  width: 120px;
+  height: 60px;
+  right: -20px;
+  top: 12px;
+  border-radius: 6px;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  outline: none;
+  border: none;
+  text-align: center;
+  color: #ffffff;
+  background-color: #4f3aa7;
+  cursor: pointer;
+}
+
+/* Animação de trocar a cor após passar o mouse por cima do botão */
+.info_submit button:hover {
+  background-color: #2f0ac5;
+  transition: 0.5s;
+}
+
+/* Estilização do cartão */
+.info__card .card {
+  width: 500px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(22.5px);
+  border-radius: 20px;
+  position: relative;
+  box-sizing: border-box;
+  padding: 40px 50px;
+}
+
+/* Estilização borda da esquerda até metade do cartão */
+.info__card .card::before {
+  content: "";
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-right: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  box-sizing: border-box;
+  border-radius: 20px 0 0 20px;
+}
+
+/* Estilização borda da direita até metade do cartão */
+.info__card .card::after {
+  content: "";
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-left: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  box-sizing: border-box;
+  border-radius: 0 20px 20px 0;
+}
+
+/* Titulo do cartão Platinum */
+.card__title h2 {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400px;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 46px;
+}
+
+/* Margem Bottom do Chip */
+.card__chip {
+  margin-bottom: 45px;
+}
+
+/* Imagem do Chip */
+.card__chip img {
+  width: 60px;
+  height: 43px;
+  border-radius: 8px;
+}
+
+/* Configurações do rodapé em geral */
+.card__footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Data de vencimento */
+.card__footer div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+/* Estilização todos P do cartão */
+.card__footer .card__footer-info p {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+/* Configuração dos P */
+.card__footer .card__footer-info p {
+  margin: 0;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+/* Margem do P NOME E SOBRENOME */
+.card__footer .card__footer-info p:first-child {
+  margin-bottom: 8px;
+}
+
+/* Configuração dos footer Nome e Data */
+.footer-text {
+  font-family: Lato, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+/* Configuração de tamanho e espaçamento do número do cartão */
+.footer-text--big {
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.07em;
+}
