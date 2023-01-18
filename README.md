@@ -12,5 +12,5 @@
 <span>
 <div align="center">
   <h3>Layout Static</h3>
-  <img src="https://user-images.githubusercontent.com/121596125/213296360-379a1375-2536-4972-b2cb-f06f3f93a263.png" width="600px" /> 
+  <img src="https://user-images.githubusercontent.com/121596125/213296360-379a1375-2536-4972-b2cb-f06f3f93a263.png" width="850px" /> 
 </div>
